@@ -1,2 +1,38 @@
-# -codex-practice-local-memo
-Codex practice project. Test-only static memo app using browser localStorage. No private data.
+# 注意（必読）
+これは**テスト用**の練習アプリです。**個人情報や秘密情報を入力しないでください**。
+
+# ローカルメモWebアプリ（練習用）
+HTML / CSS / JavaScript だけで動く、静的なメモアプリです。
+
+## 特徴
+- サーバーなし、データベースなし、ログインなし
+- メモはブラウザの `localStorage` に保存
+- メモの追加 / 削除 / 全消去
+- メモごとに作成日時を表示
+- スマホでも見やすいレスポンシブデザイン
+- 外部ライブラリ不使用
+- APIキーや秘密情報は不使用
+
+## ファイル構成
+- `index.html`
+- `style.css`
+- `script.js`
+
+## 使い方
+1. `index.html` をブラウザで開きます。
+2. テキストエリアにメモを入力して「メモを追加」を押します。
+3. 追加したメモは一覧に表示され、作成日時も表示されます。
+4. 各メモの「削除」で個別削除できます。
+5. 「全消去」で保存済みメモをすべて削除できます。
+
+## GitHub Pages で公開する手順
+1. このリポジトリを GitHub に push します。
+2. GitHub のリポジトリページで **Settings** を開きます。
+3. 左メニューの **Pages** を開きます。
+4. **Build and deployment** の **Source** で **Deploy from a branch** を選択します。
+5. Branch を `main`（または公開したいブランチ）、フォルダを `/ (root)` にして保存します。
+6. 数分後に発行される URL にアクセスして動作確認します。
+
+## 補足
+- `localStorage` のデータはブラウザごとに保存されます。
+- ブラウザのデータ削除やシークレットモードでは保存内容が消える場合があります。

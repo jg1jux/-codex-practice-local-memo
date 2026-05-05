@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ローカルメモ（テスト用）</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>練習用ローカルメモ</h1>
+      <p class="notice">これはテスト用です。個人情報・秘密情報・パスワード・APIキーは入力しないでください。</p>
+    </header>
+
+    <section class="memo-form" aria-label="メモ入力">
+      <label for="memoInput" class="sr-only">メモ内容</label>
+      <textarea id="memoInput" placeholder="メモを入力してください（テスト用）" rows="4"></textarea>
+      <div class="actions">
+        <button id="addBtn" type="button">メモを追加</button>
+        <button id="clearBtn" type="button" class="danger">全消去</button>
+      </div>
+    </section>
+
+    <section aria-label="メモ一覧">
+      <h2>メモ一覧</h2>
+      <ul id="memoList" class="memo-list"></ul>
+      <p id="emptyState" class="empty">メモはまだありません。</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
